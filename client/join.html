@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<head>
+  <title> Join Game Room </title>
+  <link rel="stylesheet" type="text/css" href="./style/join.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./images/CF.png"/>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="./scripts/join.js"></script>
+  <script defer src="./scripts/throwMSG.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style/throwMSG.css">
+</head>
+<body>
+  <div id="content_div">
+    <p id="des_text">Join Game Room</p>
+    <input id="code_input" type="text"/>
+    <input id="submit_button" type="button" value="E n t e r" onclick="attempt_join()"/>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Admin Game Creation</title>
+  <link rel="stylesheet" type="text/css" href="./style/admin.css">
+  <link rel="icon" type="image/png" href="./images/CF.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="./scripts/admin.js"></script>
+  <script defer src="./scripts/throwMSG.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style/throwMSG.css">
+</head>
+
+<body>
+  <div id="content_div">
+    <p id="title_text">Create Game</p>
+    <div id="box" style="color: white">
+      <select id="leagues">
+        <option value="Select League">Select League:</option>
+        <option value="Testing User">Testing User</option>
+        <option value="ATP">ATP</option>
+        <option value="WTA">WTA</option>
+      </select>
+    </div>
+    <input id="auth_user" class="input_box" type="text" placeholder="Email"/>
+    <input id="auth_key" class="input_box" type="password" placeholder="Auth Key"/>
+    <input id="matchup" class="input_box" type="text" placeholder="Match Up (A vs B)"/>
+    <input id="start_time" class="input_box" type="text" placeholder="Date (12/31/2020)"/>
+    <input id="tournement_name" class="input_box" type="text" placeholder="Tournament Name"/>
+    <input id="submit_button" type="button" value="Submit" onclick="registerGame();"/>
+  </div>
+
+</body>
+</html>

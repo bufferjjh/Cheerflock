@@ -1,0 +1,102 @@
+::placeholder {
+  color: #ced4b8;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #ced4b8;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #ced4b8;
+}
+body {
+  background-image: linear-gradient(90deg, #FFA17F, #00223E);
+}
+#content_div {
+  position: absolute;
+  width: 500px;
+  height: 610px;
+  border: 4px solid white;
+  border-radius: 23px;
+  left: 50%;
+  top: 50%;
+  transform : translate(-50%, -50%);
+}
+#title_text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color : white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+#box select {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: 2px solid white;
+  color : black;
+  top: 90px;
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+}
+#box select option {
+  background-color: transparent;
+}
+.input_box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
+  border-bottom: 2px solid white;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+  transition: .5s;
+}
+.input_box:Hover {
+  width: 290px;
+}
+#auth_user {
+  top: 160px;
+}
+#auth_key {
+  top: 240px;
+}
+#matchup {
+  top: 320px;
+}
+#start_time {
+  top: 400px;
+}
+#submit_button {
+  position: absolute;
+  top: 540px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
+  height: 40px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+#submit_button:Hover {
+  background-color: white;
+}
+#tournement_name {
+  top: 480px;
+}

@@ -1,0 +1,41 @@
+#shade_div {
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+#prompt_div {
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  opacity: 1;
+}
+#msgText {
+  position: absolute;
+  left: 50%;
+  top: 39%;
+  transform: translate(-50%, -50%);
+}
+#exitButton {
+  position :absolute;
+  right: 10px;
+  top: 155px;
+  cursor: pointer;
+  width: 160px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}

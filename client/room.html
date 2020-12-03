@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<head>
+  <title id="room_title"> Game Room </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./style/room.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./images/CF.png"/>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="./scripts/room.js"></script>
+  <script defer src="./scripts/throwMSG.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style/throwMSG.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="server_data">
+    <p id="user_count" style="color: blue; font-family: 'Archivo Black', sans-serif;">• 0</p>
+    <p id="roundCheer" style="color: green; font-family: 'Archivo Black', sans-serif;">• Pending Cheers</p>
+    <p id="roundBoo" style="color: red; font-family: 'Archivo Black', sans-serif;">• Pending Boos</p>
+  </div>
+  <div id="content_div">
+    <h1 id="page_header"></h1>
+    <div id="cheer_option" onclick="registerCheer()"><p id="cheer_text">CHEER</p></div>
+    <div id="boo_option" onclick="registerBoo()"><p id="cheer_text">BOO</p></div>
+    <div id="loader"></div>
+    <p id="cheer_boo_text"><a style="color: green">Cheer</a> or <a style="color: red">Boo</a></p>
+  </div>
+  <a href="index.html"><input id="return_home" type="button" value="Home"/></a>
+</body>
+</html>

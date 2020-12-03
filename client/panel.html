@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" type="text/css" href="./style/panel.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./images/CF.png"/>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="./scripts/panel.js"></script>
+</head>
+
+<body>
+  <div id="panel_content">
+    <p id="des_text">Admin Panel</p>
+    <input id="play_stop" value="Start" type="button" onclick="activate()"/>
+    <div id="cheer_data">
+      <p class="num_count" id="num_cheers"> -- </p>
+      <p class="data_des">Cheers</p>
+    </div>
+
+    <div id="boo_data">
+      <p class="num_count" id="num_boos"> -- </p>
+      <p class="data_des">Boos</p>
+    </div>
+    <p id="state_shower">Cheer Recieving Off</p>
+    <input id="play_sound" value="Play Crowd" type="button" onclick="playCrowdArg()"/>
+    <input id="end_session" value="End Session" type="button" onclick="end_session()"/>
+    <p id="users_count">• 0</p>
+    <p id="game_code">Code : 234234</p>
+  </div>
+
+</body>
+</html>

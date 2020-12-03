@@ -1,0 +1,51 @@
+body {
+  background-image: linear-gradient(90deg, #FFA17F, #00223E);
+}
+#content_div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  text-align: center;
+  word-wrap: break-word;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#matchup_title {
+  position: absolute;
+  top: 20px;
+  font-family: 'Lexend Peta', sans-serif;
+  color: white;
+  width: 400px;
+}
+#cheers {
+  position: relative;
+  top: 110px;
+  font-family: 'Lexend Peta', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+#boos {
+  position: relative;
+  top: 160px;
+  font-family: 'Lexend Peta', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+.numCount {
+  position: relative;
+  color: white;
+  font-family: 'Lexend Peta', sans-serif;
+  font-size: 15px;
+}
+#cheers_num {
+  top: 120px;
+}
+#boos_num {
+  top: 170px;
+}
